@@ -25,13 +25,13 @@ class App extends React.Component{
                 id: 'projects',
                 text: 'Projects',
                 description: "Here is a sample of some projects I've done",
-                component:<Projects></Projects>
+                component: <Projects></Projects>
                 },
                 {
                 id: 'contact',
                 text: 'Contact',
                 description: 'this is the CONTACT page...hello is this working??',
-                component:<Contact></Contact>
+                component: <Contact></Contact>
                 },
                 {
                 id: 'interests',
@@ -57,7 +57,6 @@ class App extends React.Component{
                     currentOption = {this.state.currentOption}
                     changePage = {this.changePage}
                 ></Nav>
-                <div>Hello, World!</div>
                 {this.state.navOptions.map((navOption) => (
                     <div>
                         {(this.state.currentOption==navOption.id) && navOption.component}

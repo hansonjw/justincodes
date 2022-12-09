@@ -1,6 +1,8 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
 
+import Intro from './intro.js'
+import Learning from './learning.js'
+import Skills from './skills.js'
 
 class Home extends React.Component{
     constructor(props) {
@@ -10,7 +12,9 @@ class Home extends React.Component{
     render() {
         return(
             <div>
-                Home component
+                <Intro></Intro>
+                <Skills></Skills>
+                <Learning></Learning>
             </div>
         )
     }
