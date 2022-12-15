@@ -9,9 +9,16 @@ const CONTENT = {
         github:require('./images/github.svg').default,
         hackerrank:require('./images/laptop.svg').default
     },
+    text: {
+        linkedin: "LinkedIn",
+        email: "hansonjw@gmail.com",
+        twitter: "Twitter",
+        github: "GitHub",
+        hackerrank: "HackerRank"
+    },
     links: {
         linkedin:'https://www.linkedin.com/in/justinhanson1/',
-        email:'hansonjw@gmail.com',
+        email:'mailto: hansonjw@gmail.com?subject=I came accross your webpage and...',
         twitter:'https://twitter.com/hansonjw',
         github:'https://github.com/hansonjw',
         hackerrank:'https://www.hackerrank.com/hansonjw'

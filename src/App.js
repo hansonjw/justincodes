@@ -7,6 +7,9 @@ import Projects from './components/Projects'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 
+// for SASS and customizing bootstrap
+import './assets/scss/main.scss'
+
 // import components here
 
 class App extends React.Component{
