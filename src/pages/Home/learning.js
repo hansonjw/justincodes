@@ -1,5 +1,7 @@
 import React from 'react';
-import CONTENT from './../../assets/content/HomeComponent/index.js'
+import CONTENT from '../../assets/content/HomeComponent/index.js'
+
+import Banner from './../components/Banner'
 
 const C = CONTENT.learning
 const keys = Object.keys(C.images)
@@ -13,7 +15,8 @@ class Learning extends React.Component{
         return(
             <div class="">
                 <div class="container py-5">
-                    <h1 class="display-3">{C.title}</h1>
+                    <Banner content={this.props.content}></Banner>
+                    {/* <h1 class="display-3">{C.title}</h1>
                     <figure class="text-end text-muted py-5">
                         <blockquote class="blockquote">
                             <p>{C.quote}</p>
@@ -21,7 +24,7 @@ class Learning extends React.Component{
                         <figcaption class="blockquote-footer">
                             {C.quotesource}
                         </figcaption>
-                    </figure>
+                    </figure> */}
 
 
                     <div class="row row-cols-1 row-cols-md-2">

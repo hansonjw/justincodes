@@ -1,5 +1,5 @@
 import React from 'react';
-import CONTENT from '../../assets/content/FooterComponent/foottech.js'
+import CONTENT from '../../../assets/content/FooterComponent/foottech.js'
 // import ReactDOM from 'react-dom/client';
 
 const KEYS = Object.keys(CONTENT);

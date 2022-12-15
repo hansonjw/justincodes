@@ -1,16 +1,17 @@
 import React from 'react';
-import './App.css';
-import Home from './components/Home'
-import Contact from './components/Contact'
-import Interests from './components/Interests'
-import Projects from './components/Projects'
-import Nav from './components/Nav'
-import Footer from './components/Footer'
+
+// import pages here
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Interests from './pages/Interests'
+import Projects from './pages/Projects'
+import Nav from './pages/components/Nav'
+import Footer from './pages/components/Footer'
 
 // for SASS and customizing bootstrap
 import './assets/scss/main.scss'
 
-// import components here
+
 
 class App extends React.Component{
     constructor(props) {
@@ -60,11 +61,13 @@ class App extends React.Component{
                     currentOption = {this.state.currentOption}
                     changePage = {this.changePage}
                 ></Nav>
-                {this.state.navOptions.map((navOption) => (
-                    <div>
-                        {(this.state.currentOption==navOption.id) && navOption.component}
-                    </div>
-                ))}
+                <div class="py-4">
+                    {this.state.navOptions.map((navOption) => (
+                        <div>
+                            {(this.state.currentOption==navOption.id) && navOption.component}
+                        </div>
+                    ))}
+                </div>
                 <Footer
                     navOptions = {this.state.navOptions}
                     currentOption = {this.state.currentOption}
