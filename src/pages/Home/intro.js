@@ -13,15 +13,45 @@ class Intro extends React.Component{
 
     render() {
         return(
-            <div class="container py-5">
+            <div class="container py-md-5">
                 <Banner content={this.props.content}></Banner>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-1"></div>
+                    <div class="col-md px-4">
                         <img src={this.props.content.images.image} class="anImage" alt="..."/>
                     </div>
-                    <div class="col-md-6">
-                        <p>{this.props.content.words}</p>
+                    <div class="col-md px-4 py-md-0 py-4">
+                        <div class="d-none d-md-block">
+                            {this.props.content.words.map((w) => (
+                                <div>
+                                    <p>{w}</p>
+                                </div>
+                            ))}
+                        </div>
+
+
+                        <div class="accordion accordion-flush d-block d-md-none" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    About Me
+                                </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        {this.props.content.words.map((w) => (
+                                            <div>
+                                                <p>{w}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
         )

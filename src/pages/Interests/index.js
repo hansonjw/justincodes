@@ -32,7 +32,7 @@ class Interests extends React.Component{
                                                         {CONTENT.titles[k]}
                                                     </button>
                                                 </h2>
-                                                <div id={k}class="accordion-collapse collapse" aria-labelledby="{k}-Z">
+                                                <div id={k} class="accordion-collapse collapse" aria-labelledby="{k}-Z">
                                                     <div class="accordion-body">
                                                         <p class="card-text">{CONTENT.words[k]}</p>
                                                         <div class="px-5 pb-2 text-end">

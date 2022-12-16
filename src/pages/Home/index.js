@@ -17,7 +17,7 @@ class Home extends React.Component{
 
     render() {
         return(
-            <div class="">
+            <div class="pt-md-5 pt-4">
                 <Intro content={CONTENT.intro}></Intro>
                 <Skills content={CONTENT.skills}></Skills>
                 <Learning content={CONTENT.learning}></Learning>

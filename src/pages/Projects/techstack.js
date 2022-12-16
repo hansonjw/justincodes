@@ -11,7 +11,7 @@ class TechStack extends React.Component{
         return(
             <div class="container">
                 <div class="row">
-                    <h6 class="text-muted">Tech stack</h6>
+                    <h6 class="text-muted font-monospace fst-italic">tech-stack:</h6>
                 </div>
                 <div class="row">
                 {this.props.content.map((t) => ( 

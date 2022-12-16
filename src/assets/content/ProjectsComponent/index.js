@@ -2,13 +2,13 @@ import TECH from '../Tech/tech.js'
 
 const CONTENT = {
     title:'Projects',
-    quote:`Stay primitive. Trust the soup. Swing for the seats. Be ready for resistance.`,
+    quote:`"Stay primitive. Trust the soup. Swing for the seats. Be ready for resistance."`,
     quotesource: 'Steven Pressfield',
     techdict: TECH,
     projects:{
         stockmarket:{
             title:'The Stock Market',
-            images: require('./images/stockmarket.png'),
+            images: require('./images/stocks3.svg').default,
             words:['This is a website I built to track and contextualize broad stock market.','The primary data set plotted in this site is the S&P 500 index.', 'This site makes use of some data analytic packages available in Python, specifically pandas, numpy and matplotlib'],
             techlist:['python','flask','bootstrap', 'postgresql','aws'],
             link:'http://stocksaws-env.eba-ryff9kni.us-east-1.elasticbeanstalk.com/today',
@@ -24,7 +24,7 @@ const CONTENT = {
         },
         zookeeper:{
             title:'Zoo KeepR',
-            images: require('./images/zookeepr.png'),
+            images: require('./images/zookeepr.svg').default,
             words:['This webapp was built during the UC Berkeley web development course.', 'In this project I gained exposure to forms and handling POST requests.', 'I also gained some preliminary experience utilizing a MySQL database on the back end to store form data.'],
             techlist:['javascript', 'html','css','mysql','heroku'],
             link:'https://pacific-island-81874.herokuapp.com/animals',
@@ -32,8 +32,8 @@ const CONTENT = {
         },
         techblog:{
             title:'My First Blog',
-            images: require('./images/techblog.png'),
-            words:['This webapp was built during the UC Berkeley web development course.','This is where I really started to understand requests, database interfaces, routes, and storing data.'],
+            images: require('./images/blog.svg').default,
+            words:['This webapp was built during the UC Berkeley web development course.','This is where I really started to understand requests, database interfaces, routes, and storing data. Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text'],
             techlist:['javascript', 'html','css','mysql', 'heroku',],
             link:'https://vast-fjord-84705.herokuapp.com',
             github:'https://github.com/hansonjw/tech-blog'

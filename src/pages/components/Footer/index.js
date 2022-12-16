@@ -16,7 +16,7 @@ class Footer extends React.Component{
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="text-end text-muted">This website was built with...</p>
+                            <p class="text-end text-muted fw-lighter font-monospace fst-italic">The tech-stack for this website is...</p>
                         </div>
                         <div class="col-md-6">
                             {KEYS.map((k) => (

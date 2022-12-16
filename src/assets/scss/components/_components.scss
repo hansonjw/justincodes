@@ -1,3 +1,5 @@
+
+// Images and Icons
 .anImage {
     border-radius: 1rem;
     width: 100%;
@@ -8,11 +10,8 @@
 .anIcon {
     // height: auto;
     width: 100%;
-    border-radius: .25rem;
     max-width: 50px;
-    padding: 5%;
-    margin: auto;
-    box-shadow: 0 0 4px 2px green;
+    // padding: 5%;
 }
 
 .footIcon {
@@ -24,11 +23,29 @@
 .skillIcon {
     // height: auto;
     width: 100%;
-    max-width: 100px;
+    max-width: 50px;
     padding: auto;
 }
 
 .learningIcon {
-    width: 100%;
-    max-width: 250px;
+    width: 50%;
+    max-width: 150px;
+}
+
+
+// Banner and Quote text
+.quote-text {
+    @include font-size(.75rem);
+    font-style: italic;
+}
+.source-text{
+    @include font-size(.75rem);  
+}
+@media (min-width: 1200px) {
+    .quote-text {
+        font-size: 1.25rem;
+    }
+    .source-text {
+        font-size: 1.25rem;
+    }
 }

@@ -1,9 +1,9 @@
 import WORDS from './words.js'
 const CONTENT = {
     intro: {
-        title: 'Welcome',
-        quote: `"The fight is won or lost far away from witnesses - behind the lines, in the gym, and out there on the road, long before I dance under those lights."`,
-        quotesource: 'Muhammad Ali',
+        title: 'Justin Codes',
+        quote: `“What looks like talent is often careful preparation. What looks like skill is often persistent revision.”`,
+        quotesource: "James Clear",
         words: WORDS.intro,
         images: {image: require('./images/pro.jpeg')},
     },
@@ -26,8 +26,8 @@ const CONTENT = {
     },
     skills: {
         title: 'Skills',
-        quote: `“What looks like talent is often careful preparation. What looks like skill is often persistent revision.”`,
-        quotesource: "James Clear",
+        quote: `"The fight is won or lost far away from witnesses - behind the lines, in the gym, and out there on the road, long before I dance under those lights."`,
+        quotesource: 'Muhammad Ali',
         words: WORDS,
         images: {
             python: {icon: require('./../Tech/images/python.svg').default, name:'Python', link:'https://www.python.org'},

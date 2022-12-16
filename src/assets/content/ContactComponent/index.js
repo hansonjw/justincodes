@@ -1,6 +1,7 @@
 const CONTENT = {
     title: "Contact",
-    quote: "Please reach out through the links below if you would like to get in touch with me...",
+    quote: `"There is only one way of thinking that is capable of making progress, or of surviving in the long run, and that is the way of seeking good explanations through creativity and criticism."`,
+    quotesource: "David Deutsch",
     keys: ['linkedin', 'email', 'github', 'twitter', 'hackerrank'],
     images: {
         linkedin:require('./images/linkedin.svg').default,
