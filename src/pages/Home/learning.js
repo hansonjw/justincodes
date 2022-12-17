@@ -56,9 +56,9 @@ class Learning extends React.Component{
                                                     <p>{w}</p>
                                                 </div>
                                             ))}
-                                            <a href={C.images[key].link} class="card-link text-center" target="_blank">
-                                                <h5 class="card-title">link</h5>
-                                            </a>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <a href={C.images[key].link} class="btn btn-primary" target="_blank">link</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

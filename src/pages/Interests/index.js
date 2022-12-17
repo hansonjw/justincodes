@@ -35,8 +35,8 @@ class Interests extends React.Component{
                                                 <div id={k} class="accordion-collapse collapse" aria-labelledby="{k}-Z">
                                                     <div class="accordion-body">
                                                         <p class="card-text">{CONTENT.words[k]}</p>
-                                                        <div class="px-5 pb-2 text-end">
-                                                            <a class="card-link" href={CONTENT.links[k]} role="button" target="_blank">link to map</a>
+                                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                            <a class="btn btn-primary" href={CONTENT.links[k]} role="button" target="_blank">link to map</a>
                                                         </div>  
                                                     </div>
                                                 </div>

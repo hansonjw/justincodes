@@ -18,8 +18,10 @@ class ProjCard extends React.Component{
                         <p class="card-text">{w}</p>
                     </div>
                     ))}
-                    <a href={this.props.content.link} class="card-link" target="_blank">link</a>
-                    <a href={this.props.content.github} class="card-link" target="_blank">github</a>
+                    <div class="d-grid gap-2 col-12 mx-auto py-2">
+                        <a href={this.props.content.link} class="btn btn-light px-auto" target="_blank">link</a>
+                        <a href={this.props.content.github} class="btn btn-light px-auto" target="_blank">github</a>
+                    </div>
                 </div>
                 <div class="card-footer">
                     <TechStack content={this.props.content.techlist}></TechStack>
