@@ -19,14 +19,14 @@ class Skills extends React.Component{
                     {keys.map((k) => (
                         <div class="col my-4">
                             <div class="row my-auto">
-                                <div class="col-md-6 col-12">
+                                <div class="col-md-3 col-12">
                                     <a href={C.images[k].link} target="_blank">
                                         <img src={C.images[k].icon} class="m-auto d-block skillIcon" alt="..."/>
                                     </a>
                                 </div>
-                                <div class="col-md-6 col-0 my-auto">
+                                <div class="col-md-9 col-0 my-auto">
                                     <a href={C.images[k].link} class="card-link d-md-block d-none" target="_blank">
-                                        <h6 class="card-title py-auto">{C.images[k].name}</h6>
+                                        <h6 class="py-auto font-monospace fst-lighter">{C.images[k].name}</h6>
                                     </a>                                        
                                 </div>
                             </div>
