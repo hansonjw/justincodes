@@ -13,20 +13,22 @@ class Footer extends React.Component{
     render() {
         return(
             <div>
-                <div class="container py-5">
+                <div class="container py-5 text-center">
                     <div class="row">
-                        <div class="col-md-6">
-                            <p class="text-end text-muted fw-lighter font-monospace fst-italic">The tech-stack for this website is...</p>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <p class="text-muted fw-lighter font-monospace fst-italic">The tech-stack for this website is...</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             {KEYS.map((k) => (
-                            <div class="d-inline-flex p-2">
+                            <div class="d-inline-flex p-2 text-center">
                                 <a href={CONTENT[k].link} target="_blank">
                                     <img src={CONTENT[k].icon} class="mx-auto d-block footIcon" alt=""></img>
                                 </a>
                             </div>
                             ))}
                         </div>
+                        <div class="col-md-2"></div>
                     </div>
                 </div>
 

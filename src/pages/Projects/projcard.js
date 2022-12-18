@@ -10,7 +10,7 @@ class ProjCard extends React.Component{
     render() {
         return(
             <div class="card">
-                <img src={this.props.content.images} class="card-img-top" alt="..."/>
+                <img src={this.props.content.images} class="card-img-top mx-auto py-2 d-block projectIcon" alt="..."/>
                 <div class="card-body">
                     <h5 class="card-title">{this.props.content.title}</h5>
                     {this.props.content.words.map((w) => (

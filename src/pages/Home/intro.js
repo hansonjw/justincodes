@@ -2,6 +2,7 @@ import React from 'react';
 // import CONTENT from '../../assets/content/HomeComponent/index.js'
 
 import Banner from './../components/Banner'
+import ProImage from './../components/ProImage'
 
 // const C = CONTENT.intro
 
@@ -13,12 +14,12 @@ class Intro extends React.Component{
 
     render() {
         return(
-            <div class="container py-md-5">
+            <div class="container py-md-5 py-4">
                 <Banner content={this.props.content}></Banner>
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md px-4">
-                        <img src={this.props.content.images.image} class="anImage" alt="..."/>
+                        <ProImage></ProImage>
                     </div>
                     <div class="col-md px-4 py-md-0 py-4">
                         <div class="d-none d-md-block">

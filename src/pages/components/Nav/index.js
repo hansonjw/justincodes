@@ -7,7 +7,6 @@ class Nav extends React.Component{
         super(props);
     }
 
-    // 2nd attempt
     render() {
         return(
         <div class="">
@@ -19,8 +18,8 @@ class Nav extends React.Component{
                     <li class="nav-item"></li>
                     {this.props.navOptions.map((navOption) => (
                         (this.props.currentOption === navOption.id)
-                        ? <li class="nav-item" key={navOption.id}><a class="nav-link active" onClick={() =>{this.props.changePage(navOption.id)}}><h4>{navOption.text}</h4></a></li>
-                        : <li class="nav-item" key={navOption.id}><a class="nav-link" onClick={() =>{this.props.changePage(navOption.id)}}><h6 class="">{navOption.text}</h6></a></li>
+                        ? <li class="nav-item" key={navOption.id}><a class="nav-link active" onClick={() =>{this.props.changePage(navOption.id)}}><h5>{navOption.text}</h5></a></li>
+                        : <li class="nav-item" key={navOption.id}><a class="nav-link" onClick={() =>{this.props.changePage(navOption.id)}}><h5 class="">{navOption.text}</h5></a></li>
                     ))}
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
@@ -37,8 +36,8 @@ class Nav extends React.Component{
                         <ul class="navbar-nav">
                             {this.props.navOptions.map((navOption) => (
                                 (this.props.currentOption === navOption.id)
-                                    ? <li class="nav-item dropdown text-end" key={navOption.id}><a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
-                                    : <li class="nav-item dropdown text-end" key={navOption.id}><a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
+                                    ? <li class="nav-item dropdown text-end px-3" key={navOption.id}><a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
+                                    : <li class="nav-item dropdown text-end px-3" key={navOption.id}><a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
                             ))}
                         </ul>
                     </div>
@@ -46,44 +45,9 @@ class Nav extends React.Component{
 
             </div>
         </div>
-
-
-
-
-
         )
     }
-
-    // third version
-
-
-
-    // first version
-    // render() {
-    //     return(
-    //         <div>
-    //             <nav class="navbar">
-    //                 <i class="bi bi-justify"></i>
-    //                 <a class="navbar-brand" href="#"></a>
-    //                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-bs-auto-close="true" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    //                     <span class="navbar-toggler-icon"></span>
-    //                 </button>
-    //                 <div class="collapse navbar-collapse" id="navbarNav">
-    //                     <ul class="nav">
-    //                         {this.props.navOptions.map((navOption) => (
-    //                             (this.props.currentOption === navOption.id)
-    //                                 ? <li class="nav-item" key={navOption.id}><a class="nav-link active px-md-5" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
-    //                                 : <li class="nav-item" key={navOption.id}><a class="nav-link px-md-5" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
-    //                         ))}
-    //                     </ul>
-    //                 </div>
-    //             </nav>
-    //         </div>
-    //     )
-    // }
 }
-
-
 
 
 export default Nav

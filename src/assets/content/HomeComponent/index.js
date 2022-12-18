@@ -36,6 +36,7 @@ const CONTENT = {
             mysql: {icon: require('./../Tech/images/mysql.svg').default,name:'MySQL', link:'https://www.mysql.com'},
             html: {icon: require('./../Tech/images/html.svg').default,name:'HTML', link:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
             css: {icon: require('./../Tech/images/css.svg').default, name:'CSS', link:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+            react: {icon: require('./../Tech/images/react.svg').default, name:'React', link:'https://www.reactjs.org/'},
             flask: {icon: require('./../Tech/images/flask.svg').default, name:'Flask', link:'https://flask.palletsprojects.com/en/2.2.x/'},
             django: {icon: require('./../Tech/images/django.svg').default, name:'Django', link:'https://www.djangoproject.com'},
             github: {icon: require('./../Tech/images/github.svg').default, name:'GitHub', link:'https://github.com'},

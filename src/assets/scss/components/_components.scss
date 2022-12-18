@@ -1,17 +1,30 @@
 
 // Images and Icons
 .anImage {
-    border-radius: 1rem;
+    border-radius: 50%;
     width: 100%;
     max-width: 500px;
-    box-shadow: 0 0 4px 2px lightgrey;
+    box-shadow: 0 0 10px 8px lightgrey;
+    // box-shadow: 0 0 10px 10px white inset;
 }
 
-.anIcon {
+.contactIcon {
+    width: 100%;
+    max-width: 35px;
+}
+
+@media (min-width: 400px) {
+    .contactIcon {
+        max-width: 50px;
+    }
+}
+
+
+.projectIcon {
     // height: auto;
     width: 100%;
-    max-width: 50px;
-    // padding: 5%;
+    max-width: 100px;
+    padding: auto none;
 }
 
 .footIcon {
@@ -41,6 +54,7 @@
 .source-text{
     @include font-size(.75rem);  
 }
+
 @media (min-width: 1200px) {
     .quote-text {
         font-size: 1.25rem;

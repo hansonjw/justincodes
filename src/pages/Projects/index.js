@@ -15,7 +15,7 @@ class Projects extends React.Component{
     render() {
         return(
             <div class="">
-                <div class="container py-5">
+                <div class="container py-md-5 py-4">
                     <Banner content={CONTENT}></Banner>
                     <div class="row row-cols-1 row-cols-md-4">
                         {keys.map((key) => (      

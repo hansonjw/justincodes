@@ -10,7 +10,7 @@ class Interests extends React.Component{
     render() {
         return(
             <div class="">
-                <div class="container py-5">
+                <div class="container py-md-5 py-4">
                 
                     <Banner content={CONTENT}></Banner>
 
