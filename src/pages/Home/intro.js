@@ -17,11 +17,10 @@ class Intro extends React.Component{
             <div class="container py-md-5 py-4">
                 <Banner content={this.props.content}></Banner>
                 <div class="row">
+                    {/*buffer column */}
                     <div class="col-md-1"></div>
-                    <div class="col-md px-4">
-                        <ProImage></ProImage>
-                    </div>
-                    <div class="col-md px-4 py-md-0 py-4">
+                    {/* words column */}
+                    <div class="col-md px-4 py-md-0 my-auto py-4">
                         <div class="d-none d-md-block">
                             {this.props.content.words.map((w) => (
                                 <div>
@@ -49,9 +48,12 @@ class Intro extends React.Component{
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
+                    {/* picture of me on right */}
+                    <div class="col-md px-4">
+                        <ProImage></ProImage>
+                    </div>
+                    {/* buffer collumn */}
                     <div class="col-md-1"></div>
                 </div>
             </div>

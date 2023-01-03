@@ -1,7 +1,7 @@
 import TECH from '../Tech/tech.js'
 
 const CONTENT = {
-    title:'Projects',
+    title:'Coding',
     quote:`"Stay primitive. Trust the soup. Swing for the seats. Be ready for resistance."`,
     quotesource: 'Steven Pressfield',
     techdict: TECH,
