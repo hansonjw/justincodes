@@ -33,7 +33,7 @@ class Learning extends React.Component{
                                         <div class="accordion-body">
                                             {C.words[key].map((w) => (
                                                 <div>
-                                                    <p>{w}</p>
+                                                    <p class="fw-lighter">{w}</p>
                                                 </div>
                                             ))}
                                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">

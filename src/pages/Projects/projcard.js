@@ -15,7 +15,7 @@ class ProjCard extends React.Component{
                     <h5 class="card-title">{this.props.content.title}</h5>
                     {this.props.content.words.map((w) => (
                     <div>
-                        <p class="card-text">{w}</p>
+                        <p class="card-text fw-lighter py-1">{w}</p>
                     </div>
                     ))}
                     <div class="d-grid gap-2 col-12 mx-auto py-2">

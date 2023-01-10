@@ -24,7 +24,7 @@ class Intro extends React.Component{
                         <div class="d-none d-md-block">
                             {this.props.content.words.map((w) => (
                                 <div>
-                                    <p>{w}</p>
+                                    <p class="fw-lighter">{w}</p>
                                 </div>
                             ))}
                         </div>

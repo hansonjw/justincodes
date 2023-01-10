@@ -55,6 +55,7 @@ const CONTENT = {
         quotesource: "Steve Jobs",
         emImage: require('./images/em.png'),
         emWords: WORDS.em,
+        emLink: "https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from.php",
         images: {
             exxonmobil: {image: require('./images/em.png'), title: '', words:WORDS.exxonmobil, link:'https://www.exxonmobil.com'},
             beaumont: {image: require('./images/beaumont.png'), title:'US Oil Refinery - Beaumont, TX', words: WORDS.beaumont, link:'https://goo.gl/maps/PkgHXbCokCBmUVUi6'},

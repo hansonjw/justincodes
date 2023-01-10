@@ -19,8 +19,19 @@ class Experience extends React.Component{
             <div class="container py-md-5">
                 <Banner content={this.props.content}></Banner>
                 
-                    {/* Carousel of images and experience */}
-                
+                <div class="row">
+                    <div class="col-6"><img src={this.props.content.emImage} class="img-fluid"/></div>
+                    <div class="col-6 my-auto">
+                        {this.props.content.emWords.map((w) => (
+                            <p class="fw-lighter">{w}</p>))}
+                        
+                        <div class="d-grid gap-2">
+                            <a href={this.props.content.emLink} class="btn btn-outline-secondary px-auto" target="_blank">EIA - Oil Production</a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Carousel of images and experience */}
                 <div id="carouselExampleCaptions" class="carousel slide" ride='false'>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
