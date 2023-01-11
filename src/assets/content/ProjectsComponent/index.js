@@ -1,7 +1,7 @@
 import TECH from '../Tech/tech.js'
 
 const CONTENT = {
-    title:'Coding',
+    title:'Code',
     quote:`"Stay primitive. Trust the soup. Swing for the seats. Be ready for resistance."`,
     quotesource: 'Steven Pressfield',
     techdict: TECH,
@@ -17,7 +17,7 @@ const CONTENT = {
         nfl:{
             title:'NFL Playoff Pickem league',
             images: require('./images/nfl.svg').default,
-            words:['This web-app was built for my family NFL 2021 postseason pickem league.', 'This was a fun excercise with React and Bootstrap'],
+            words:['This web-app was built for my family NFL postseason pickem league.', 'This was a fun excercise with React and Bootstrap.'],
             techlist:['javascript','react','bootstrap', 'aws'],
             link: 'https://main.d3ifrmw0t9szzm.amplifyapp.com/scoreboard',
             github:'https://github.com/hansonjw/nfl_hanson_frontend'
