@@ -15,7 +15,7 @@ const CONTENT = {
             github:'https://github.com/hansonjw/stocksaws'
         },
         nfl:{
-            title:'NFL Playoff Pickem league',
+            title:'NFL Playoffs Pickem',
             images: require('./images/nfl.svg').default,
             words:['This web-app was built for my family NFL postseason pickem league.', 'This was a fun excercise with React and Bootstrap.'],
             techlist:['javascript','react','bootstrap', 'aws'],

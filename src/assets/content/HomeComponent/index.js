@@ -57,7 +57,7 @@ const CONTENT = {
         emWords: WORDS.em,
         emLink: "https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from.php",
         images: {
-            exxonmobil: {image: require('./images/em.png'), title: '', words:WORDS.exxonmobil, link:'https://www.exxonmobil.com'},
+            // exxonmobil: {image: require('./images/em.png'), title: '', words:WORDS.exxonmobil, link:'https://www.exxonmobil.com'},
             beaumont: {image: require('./images/beaumont.png'), title:'US Oil Refinery - Beaumont, TX', words: WORDS.beaumont, link:'https://goo.gl/maps/PkgHXbCokCBmUVUi6'},
             midland:{image: require('./images/midland.png'), title: 'US Oil Fields - Midland, TX', words: WORDS.midland, link:'https://goo.gl/maps/wcgVFR3pqAtZnWR69'},
             permian: {image: require('./images/permian.png'), title:'Oil Field Infrastructure - Permian Basin', words: WORDS.permian, link:'https://corporate.exxonmobil.com/news/newsroom/news-releases/2017/0117_exxonmobil-to-acquire-companies-doubling-permian-basin-resource-to-6-billion-barrels'},

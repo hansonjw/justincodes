@@ -28,8 +28,6 @@ class Intro extends React.Component{
                                 </div>
                             ))}
                         </div>
-
-
                         <div class="accordion accordion-flush d-block d-md-none" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
@@ -53,7 +51,7 @@ class Intro extends React.Component{
                     <div class="col-md px-4">
                         <ProImage></ProImage>
                     </div>
-                    {/* buffer collumn */}
+                    {/* buffer column */}
                     <div class="col-md-1"></div>
                 </div>
             </div>

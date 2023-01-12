@@ -17,12 +17,16 @@ class Projects extends React.Component{
             <div class="">
                 <div class="container py-md-5 py-4">
                     <Banner content={CONTENT}></Banner>
-                    <div class="row row-cols-1 row-cols-md-4">
-                        {keys.map((key) => (      
-                        <div class="col g-4">
+                    <div class="row justify-content-md-center g-5">
+                        {/* place holder */}
+                        {/* <div class="col"></div> */}
+                        {keys.map((key) => (
+                        <div class="col-md-4">
                             <ProjCard content={C[key]}></ProjCard>                           
                         </div>
                         ))}
+                        {/* place holder */}
+                        {/* <div class="col"></div> */}
                     </div>
                 </div>
             </div>
