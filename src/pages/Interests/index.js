@@ -38,7 +38,7 @@ class Interests extends React.Component{
                                                             <p class="card-text fw-lighter">{w}</p>
                                                         ))}
                                                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                            <a class="btn btn-primary" href={CONTENT.links[k]} role="button" target="_blank">link to map</a>
+                                                            <a class="btn btn-light" href={CONTENT.links[k]} role="button" target="_blank">link to map</a>
                                                         </div>  
                                                     </div>
                                                 </div>

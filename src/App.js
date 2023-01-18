@@ -27,7 +27,7 @@ class App extends React.Component{
                 },
                 {
                 id: 'projects',
-                text: 'Coding',
+                text: 'Code',
                 description: "Here is a sample of some projects I've done",
                 component: <Projects></Projects>
                 },
