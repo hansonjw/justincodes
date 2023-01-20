@@ -2,30 +2,23 @@ import React from 'react';
 import TECH from '../../assets/content/Tech/tech.js';
 
 
-class TechStack extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return(
-            <div class="container">
-                <div class="row">
-                    <h6 class="text-muted font-monospace fst-italic">tech-stack:</h6>
-                </div>
-                <div class="row">
-                {this.props.content.map((t) => ( 
-                    <div class="col d-inline-flex p-2">
-                    {/* <TechStack techStr={t}></TechStack> */}
-                        <a href={TECH[t].link} target="_blank">
-                            <img src={TECH[t].icon} class="mx-auto d-block footIcon" alt="..."></img>
-                        </a>
-                    </div>
-                ))}
-                </div>
+function TechStack (props){
+    return<div class="container">
+        <div class="row">
+            <h6 class="text-muted font-monospace fst-italic">tech-stack:</h6>
+        </div>
+        <div class="row">
+        {props.techlist.map((t) => ( 
+            <div class="row p-2">
+            {/* <TechStack techStr={t}></TechStack> */}
+                <a class="d-inline-flex" href={TECH[t].link} target="_blank">
+                    <img src={TECH[t].icon} class="col-4 mx-auto d-flex footIcon" alt="..."></img>
+                    <p class="col-8 font-monospace my-auto">{TECH[t].name}</p>
+                </a>
             </div>
-        )
-    }
+        ))}
+        </div>
+    </div>
 }
 
 export default TechStack

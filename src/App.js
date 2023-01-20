@@ -2,6 +2,7 @@ import React from 'react';
 
 // import pages here
 import Home from './pages/Home'
+import Experience from './pages/Experience'
 import Contact from './pages/Contact'
 import Interests from './pages/Interests'
 import Projects from './pages/Projects'
@@ -21,9 +22,15 @@ class App extends React.Component{
             navOptions: [            
                 {
                 id: 'home',
-                text: 'Home',
+                text: 'About Me',
                 description: 'Welcome to my personal website',
                 component: <Home></Home>
+                },
+                {
+                    id: 'experience',
+                    text: 'Experience',
+                    description: "Experience in the Energy Industry",
+                    component: <Experience></Experience>
                 },
                 {
                 id: 'projects',

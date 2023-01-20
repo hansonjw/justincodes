@@ -36,8 +36,8 @@ class Learning extends React.Component{
                                                     <p class="fw-light">{w}</p>
                                                 </div>
                                             ))}
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                <a href={C.images[key].link} class="btn btn-primary" target="_blank">link</a>
+                                            <div class="d-grid gap-2">
+                                                <a href={C.images[key].link} class="btn btn-light" role="button" target="_blank">link</a>
                                             </div>
                                         </div>
                                     </div>

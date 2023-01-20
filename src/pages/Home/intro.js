@@ -9,7 +9,6 @@ import ProImage from './../components/ProImage'
 class Intro extends React.Component{
     constructor(props) {
         super(props);
-        console.log(props);
     }
 
     render() {
