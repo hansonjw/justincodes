@@ -9,7 +9,7 @@ class Banner extends React.Component{
 
     render() {
         return(
-            <div>
+            <div class="py-2">
                 <h1 class="">{this.props.content.title}</h1>
                 <hr></hr>
                 <div class="row">

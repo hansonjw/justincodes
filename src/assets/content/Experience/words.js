@@ -1,8 +1,8 @@
 const WORDS = {  
     em: [
-        `The scale of the energy industry is unparalleled in business and ExxonMobil is a world-class leader.  I am grateful to have worked for this great company.`,
-        `At ExxonMobil I leveraged big data, code, technology, and data science to drive sound economic decisions.  This is now a passion.`,
-        `Please have a look through the slides to see my work experience.  Also, the following link provides some good context to the oil industry.`
+        `At ExxonMobil I leveraged big data, code, technology, and data science to drive sound economic decisions.`,
+        `This is now a passion.`,
+        `Please have a look through the slides to see my work experience.  Also, the following link provides good background on the world energy landscape.`
     ],
     beaumont: [
         `In ExxonMobil’s world class employee development program I saw first hand the operational magnitude required to convert oil into economically viable products for humanity.`,
