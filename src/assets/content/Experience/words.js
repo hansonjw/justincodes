@@ -1,8 +1,8 @@
 const WORDS = {  
     em: [
-        `At ExxonMobil I leveraged big data, code, technology, and data science to drive sound economic decisions.`,
-        `This is now a passion.`,
-        `Please have a look through the slides to see my work experience.  Also, the following link provides good background on the world energy landscape.`
+        `At ExxonMobil I leveraged big data, code, technology, and data science to drive insightful Business Intelligence and inform sound economic decisions.`,
+        `This is my passion.`,
+        `Please have a look through the slides to see where I worked. Also, click the following link for more background on the World’s energy.`
     ],
     beaumont: [
         `In ExxonMobil’s world class employee development program I saw first hand the operational magnitude required to convert oil into economically viable products for humanity.`,

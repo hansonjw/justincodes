@@ -27,9 +27,9 @@ class Nav extends React.Component{
 
 
                 {/* // Dropdown 'burger' shown only in mobile, otherwise hidden */}
-                <nav class="navbar py-0 d-md-none">
-                    <div></div>
-                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-bs-auto-close="true" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<nav class="navbar py-0 d-md-none">
+                    <div class="px-3">Justin Codes</div>
+                	<button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-bs-auto-close="true" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">

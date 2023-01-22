@@ -7,17 +7,15 @@ const WORDS = {
     ],
     
     und: [
-        "Early in my career I received my first exposure to business and quickly saw that financial acumen was crucial to good decision making.  Also, it's the Achilles heel of many otherwise good engineers.  My interest in economics was piqued and I began to sense the liberating advantages in disciplined investment analysis.",
+        "Early in my career I recognized how finance and economics are essential for good decision making.  I also saw that the Achilles heel of otherwise good engineers is a lack of understanding in these areas. My interest in economics was piqued and I began to sense the tangible advantages in disciplined investment analysis.",
         "At this time the world began to change in a big way.  The financial industry was entering the era of ‘big data’ and was calling for analytical skills and computing saavy.  Given my technical background and interest in economics, getting an MBA was a unexpected next step for me.",
         "At Notre Dame I found a wonderful community of disciplined, intellectually curious learners.  At this great institution I was exposed to financial thinkers like Warren Buffett and became fascinated by investing and building economic prosperity."
-        ],
-    
+    ],
     em: [
         `The scale of the energy industry is unparalleled in business and ExxonMobil is a world-class leader.  I am grateful to have worked for this great company.`,
         `At ExxonMobil I leveraged big data, code, technology, and data science to drive sound economic decisions.  This is now a passion.`,
         `Please have a look through the slides to see my work experience.  Also, the following link provides some good context to the oil industry.`
     ],
-    
     uca: [
         "I sometimes think back to the early 20th century when humanity flew for the first time, illuminated the world with electricity, developed the assembly line, and began to communicate across the world in real time.",
         "These technological advancements changed to world forever and culminated in a period called “the roaring 20’s”; a period of rapid economic growth and prosperity.",
@@ -25,10 +23,9 @@ const WORDS = {
         "To that end and with a clear sense of my strengths and interests, I sought a formal and rigorous environment solidify my skills in code.",
         "I found a perfect fit with the coding bootcamp at the University of California Berkeley Extension.  In this course I enhanced my skillset with fundamentals in JavaScript and web technologies."
     ],
-    
     intro: [
-        "I am an analyst and full stack developer with a strong curiosity in math, science, economics, and technology.  I'm facinated by how advancements in these areas are impacting humanity.",
-        "My experience includes working for one of the world's oldest and most successful bluechip corporations in ExxonMobil.",
+        "I am a full stack developer with a strong curiosity in the convergence of math, science, economics, and technology.",
+        "My experience includes working for one of the world's oldest and most successful corporations in ExxonMobil.",
         "I also have a strong academic background with degrees from the University of Colorado, and the University of Notre Dame.",
     ],
     exxonmobil: [],
