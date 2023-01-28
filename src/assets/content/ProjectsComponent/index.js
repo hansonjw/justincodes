@@ -18,7 +18,7 @@ const CONTENT = {
         {
             title:'NFL Playoffs Pickem',
             images: require('./images/football.svg').default,
-            words:['This web-app was built for my family NFL postseason pickem league.', 'This was a fun excercise with React and Bootstrap.'],
+            words:['This is a simple web-app for my family NFL postseason pickem league.', "This was a fun excercise with React and Bootstrap, as well as leveraging Bootstrap's grid system."],
             techlist:['javascript','react','bootstrap', 'aws'],
             link: 'https://main.d3ifrmw0t9szzm.amplifyapp.com/scoreboard',
             github:'https://github.com/hansonjw/nfl_hanson_frontend',

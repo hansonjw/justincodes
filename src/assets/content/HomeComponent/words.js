@@ -17,11 +17,8 @@ const WORDS = {
         `Please have a look through the slides to see my work experience.  Also, the following link provides some good context to the oil industry.`
     ],
     uca: [
-        "I sometimes think back to the early 20th century when humanity flew for the first time, illuminated the world with electricity, developed the assembly line, and began to communicate across the world in real time.",
-        "These technological advancements changed to world forever and culminated in a period called “the roaring 20’s”; a period of rapid economic growth and prosperity.",
-        "The parallels of “the roaring ’20’s” with today are hard to ignore.  It is very hard to predict the future; however, much of the world is transitioning in massive ways.  The energy energy is facing renewed competitioin in all forms, data and communications are reaching more and more people every day, and data science and AI are giving humanity profound insights into just about every aspect of the human condition.",
-        "To that end and with a clear sense of my strengths and interests, I sought a formal and rigorous environment solidify my skills in code.",
-        "I found a perfect fit with the coding bootcamp at the University of California Berkeley Extension.  In this course I enhanced my skillset with fundamentals in JavaScript and web technologies."
+        "Later in my career I recognized that I had accumulated a variety of skills with computation and analysis, but lacked a central focus.  My natural curiosity led me to a formal and rigorous environment for learning code.",
+        "I found a perfect fit with the coding bootcamp at the University of California Berkeley Extension.  In this course I learned the fundamentals in JavaScript and web technologies."
     ],
     intro: [
         "I am a full stack developer with a strong curiosity in the convergence of math, science, economics, and technology.",
