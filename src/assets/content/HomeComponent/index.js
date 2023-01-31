@@ -1,7 +1,7 @@
 import WORDS from './words.js'
 const CONTENT = {
     intro: {
-        title: 'Justin Codes',
+        title: 'About Me',
         quote: `“What looks like talent is often careful preparation. What looks like skill is often persistent revision.”`,
         quotesource: "James Clear",
         words: WORDS.intro,

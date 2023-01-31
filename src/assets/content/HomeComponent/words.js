@@ -17,11 +17,11 @@ const WORDS = {
         `Please have a look through the slides to see my work experience.  Also, the following link provides some good context to the oil industry.`
     ],
     uca: [
-        "Later in my career I recognized that I had accumulated a variety of skills with computation and analysis, but lacked a central focus.  My natural curiosity led me to a formal and rigorous environment for learning code.",
-        "I found a perfect fit with the coding bootcamp at the University of California Berkeley Extension.  In this course I learned the fundamentals in JavaScript and web technologies."
+        "Over my career I have accumulated a variety of skills with computation and analysis.  My natural curiosity led me to a formal and rigorous environment for learning code.",
+        "With the coding bootcamp at the University of California Berkeley Extension I found a perfect aligning thread to my experience.  In this course I learned the fundamentals of good code."
     ],
     intro: [
-        "I am a full stack developer with a strong curiosity in the convergence of math, science, economics, and technology.",
+        "I am a engineer, analyst, and full stack developer with a strong curiosity in the convergence of math, science, economics, and technology.",
         "My experience includes working for one of the world's oldest and most successful corporations in ExxonMobil.",
         "I also have a strong academic background with degrees from the University of Colorado, and the University of Notre Dame.",
     ],

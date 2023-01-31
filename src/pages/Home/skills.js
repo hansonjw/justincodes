@@ -26,9 +26,9 @@ class Skills extends React.Component{
 function Category(props){
     return <div>
         <div class="row mt-3 p-2">
-            <p class="font-monospace fst-italic text-secondary">{props.category.category}</p>
+            <p class="font-monospace fst-italic text-secondary"><u>{props.category.category}</u></p>
         </div>
-        <div class="row row-cols-3 row-cols-md-5 g-4 p-2">
+        <div class="row row-cols-3 row-cols-md-5 g-4 p-auto m-auto justify-content-center">
             {props.category.items.map((item) => (
                 <Skill skill={item}/>
             ))}
