@@ -1,53 +1,50 @@
-import React from 'react';
+import * as React from "react";
+import { NavLink } from "react-router-dom";
 // import ReactDOM from 'react-dom/client';
 
 
-class Nav extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+function Nav(props){
 
-    render() {
-        return(
-        <div class="">
-            <div class="bg-light pt-md-3 pb-md-0 py-2 fixed-top">
+    let activeYesStr = "nav-item nav-link active"
+    let activeNoStr = "nav-item nav-link"
 
-                {/* // Nav shown only in Medium size screens and obove...hidden for mobile */}
-                <ul class="nav nav-tabs nav-fill d-none d-md-flex">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    {this.props.navOptions.map((navOption) => (
-                        (this.props.currentOption === navOption.id)
-                        ? <li class="nav-item" key={navOption.id}><a class="nav-link active" onClick={() =>{this.props.changePage(navOption.id)}}><h5>{navOption.text}</h5></a></li>
-                        : <li class="nav-item" key={navOption.id}><a class="nav-link" onClick={() =>{this.props.changePage(navOption.id)}}><h5 class="">{navOption.text}</h5></a></li>
-                    ))}
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                </ul>
-
-
-                {/* // Dropdown 'burger' shown only in mobile, otherwise hidden */}
-				<nav class="navbar py-0 d-md-none">
-                    <div class="px-3">Justin Codes</div>
-                	<button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-bs-auto-close="true" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            {this.props.navOptions.map((navOption) => (
-                                (this.props.currentOption === navOption.id)
-                                    ? <li class="nav-item dropdown text-end px-3" key={navOption.id}><a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
-                                    : <li class="nav-item dropdown text-end px-3" key={navOption.id}><a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() =>{this.props.changePage(navOption.id)}}>{navOption.text}</a></li>
-                            ))}
-                        </ul>
-                    </div>
-                </nav>
-
-            </div>
-        </div>
-        )
-    }
+    return(<div class="bg-light pt-md-3 pb-md-0 py-2 fixed-top">
+        {/* // Nav shown only in Medium size screens and obove...hidden for mobile */}
+        <ul class="nav nav-tabs nav-fill d-none d-md-flex">
+            <li class="nav-item"></li>
+            <li class="nav-item"></li>
+            {props.navOptions.map((o) => (
+                <NavLink to={o.to} className={({ isActive }) => isActive ? activeYesStr : activeNoStr}>{o.text}</NavLink>
+            ))}
+            <li class="nav-item"></li>
+            <li class="nav-item"></li>
+            {/* <NavLink to="/"><a>text</a></NavLink> */}
+        </ul>
+        <Burger navOptions={props.navOptions}></Burger>
+    </div>)
 }
 
 
-export default Nav
+function Burger(props){
+    let activeYesStr = "dropdown-item active"
+    let activeNoStr = "dropdown-item"
+
+    return(<nav class="navbar py-0 d-md-none">
+        <div class="px-3">Justin Codes</div>
+
+        <div class="">
+            <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end px-1">
+                {props.navOptions.map((o) => (
+                    <li><NavLink to={o.to} className={({ isActive }) => isActive ? activeYesStr : activeNoStr}>{o.text}</NavLink></li>
+                ))}
+            </ul>
+        </div>
+
+    </nav>)
+}
+
+
+export default Nav;
