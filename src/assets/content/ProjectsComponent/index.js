@@ -25,17 +25,17 @@ const CONTENT = {
             status: 'done'
         },
         {
-            title:'Valuation Calculator',
-            images: require('./images/calculator.svg').default,
-            words:['Coming soon!', ''],
-            techlist:['javascript','react','bootstrap', 'aws'],
-            link: 'https://www.justin-codes.com',
-            github:'https://www.justin-codes.com',
-            status: 'Coming soon!'
-        },
-        {
             title:'Mandlebrot set',
             images: require('./images/fractal.svg').default,
+            words:['Explorations of the Mandelbrot set', 'This was a fun exercise in understanding algorithmic complexity.','Understanding how best to create a color palette, determine number of iterations, and finding interesting spaces on the set were just some of the challenges in developing interesting plots.','This was also a good exercise in seeing how others approach a unique problem and implement thier own coding style with classes, objects, functions, etc.'],
+            techlist:['javascript','react','bootstrap', 'aws', 'python'],
+            link: 'https://main.ddjftz69e8x4k.amplifyapp.com',
+            github:'https://github.com/hansonjw/mandelbrot_web',
+            status: 'done'
+        },
+        {
+            title:'Valuation Calculator',
+            images: require('./images/calculator.svg').default,
             words:['Coming soon!', ''],
             techlist:['javascript','react','bootstrap', 'aws'],
             link: 'https://www.justin-codes.com',
