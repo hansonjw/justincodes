@@ -2,7 +2,7 @@ const WORDS = {
     uco: [
         "I have an analytical mindset and a strong interest in math.  This led me to the University of Colorado where I studied Mechanical Engineering as an undergraduate.",
         "Much of my time at CU was spent in the UNIX workstation lab building 3D models, computing stress and strain of mechanical systems, and modeling temperature gradients and fluid flow.  To accomplished all of this I used high level cuttent edge software like Finite Element Analysis (FEA), Computer Aided Drafting (CAD), computational fluid dynamics (CFD), and Matlab.",        
-        "One of my favorite courses at CU was an introduction to Computer Science which taught us the fundamentals of Data Structures and Algorithms through programming in C++.",
+        "One of my favorite courses at CU was an introduction to Computer Science course which taught us the fundamentals of Data Structures and Algorithms through programming in C++.",
         "It was impossible to see my future career at the time, however, my time spent in the computer lab laid a strong foundation in analysis, data, and computation.  As my career developed, my focus shifted from mechanical systems to utilizing software to solve all kinds of problems."
     ],
     

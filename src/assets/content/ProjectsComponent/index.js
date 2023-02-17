@@ -9,7 +9,7 @@ const CONTENT = {
         {
             title:'The Stock Market',
             images: require('./images/stocks3.svg').default,
-            words:['This is a website I built to live charts that put the recent market downturn in perspective.','The primary data set plotted in this site is the S&P 500 index.', 'It utilized data analytic packages available in Python, specifically pandas, numpy and matplotlib'],
+            words:['A web app for live charts plotting the recent market downturn for perspective.','The primary data set utilized in the app is the S&P 500 index.', 'It leverages data analytic packages available in Python, specifically Pandas, Numpy and Matplotlib'],
             techlist:['python','flask','bulma','aws'],
             link:'http://stocksaws-env.eba-ryff9kni.us-east-1.elasticbeanstalk.com/today',
             github:'https://github.com/hansonjw/stocksaws',
@@ -18,7 +18,7 @@ const CONTENT = {
         {
             title:'NFL Playoffs Pickem',
             images: require('./images/football.svg').default,
-            words:['This is a simple web-app for my family NFL postseason pickem league.', "This was a fun excercise with React and Bootstrap, as well as leveraging Bootstrap's grid system."],
+            words:['A simple web-app for my family NFL postseason pickem league.', "It was a fun excercise with React and Bootstrap and really solidified my grasp of Bootstrap's grid system."],
             techlist:['javascript','react','bootstrap', 'aws'],
             link: 'https://main.d3ifrmw0t9szzm.amplifyapp.com/scoreboard',
             github:'https://github.com/hansonjw/nfl_hanson_frontend',
@@ -27,7 +27,7 @@ const CONTENT = {
         {
             title:'Mandlebrot set',
             images: require('./images/fractal.svg').default,
-            words:['Explorations of the Mandelbrot set', 'This was a fun exercise in understanding algorithmic complexity.','Understanding how best to create a color palette, determine number of iterations, and finding interesting spaces on the set were just some of the challenges in developing interesting plots.','This was also a good exercise in seeing how others approach a unique problem and implement thier own coding style with classes, objects, functions, etc.'],
+            words:['Explorations of the Mandelbrot set', 'A fun exercise in wrestling with algorithmic complexity while producing useful code.','Understanding how best to create a color palette, determine number of iterations, and finding interesting spaces on the set were just some of the challenges in developing interesting plots.','This was also a good exercise in seeing how others approach object oriented design'],
             techlist:['javascript','react','bootstrap', 'aws', 'python'],
             link: 'https://main.ddjftz69e8x4k.amplifyapp.com',
             github:'https://github.com/hansonjw/mandelbrot_web',
