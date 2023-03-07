@@ -31,6 +31,12 @@ const CONTENT = {
         words: WORDS,
         categories: [
             {
+                category: "Certificates",
+                items:[
+                    {icon: require("./../Tech/images/aws-certified-cloud-practitioner.png"), name: "AWS Cloud Practitioner", link:"https://www.credly.com/badges/57e66f4f-ebb4-4047-a626-0bb73fffca49/public_url"}
+                ]
+            },
+            {
                 category: "Programming Languages",
                 items: [
                     {icon: require('./../Tech/images/python.svg').default, name:'Python', link:'https://www.python.org'},
