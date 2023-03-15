@@ -1,0 +1,14 @@
+$custom-colors: (
+  jyellow: $yellow-100,
+  jorange: $orange-500,
+  jblue: $blue-400,
+  jltblue: $blue-100,
+  jred: $pink-100,
+  jltgray: $gray-100,
+  jmdgray: $gray-400,
+  jcyan: $cyan-100,
+  jmdcyan: $cyan-300
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

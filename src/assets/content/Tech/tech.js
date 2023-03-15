@@ -16,7 +16,9 @@ const TECH = {
     bulma:{icon:require('./images/bulma.png'), name:'Bulma', link:'https://bulma.io'},
     bootstrap:{icon:require('./images/bootstrap.png'), name:'Bootstrap', link:'https://getbootstrap.com'},
     mysql:{icon:require('./images/mysql.svg').default, name:'MySQL', link:'https://www.mysql.com'},
-    aws:{icon:require('./images/aws.svg').default, name:'AWS', link:'https://aws.amazon.com'}
+    aws:{icon:require('./images/aws.svg').default, name:'AWS', link:'https://aws.amazon.com'},
+    nodejs:{icon:require('./images/nodejs.svg').default, name:'node.js', link:'https://nodejs.org/en/'},
+    fastapi:{icon:require('./images/fastapi.svg').defualt, name:'FastAPI', link:'https://fastapi.tiangolo.com'}
 }
 
 export default TECH

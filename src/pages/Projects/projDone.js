@@ -17,11 +17,11 @@ function ProjDone(props){
                             {props.project.words.map((w) => (
                                 <p class="card-text fw-lighter py-1">{w}</p>
                             ))}
-                            <TechStack techlist={props.project.techlist}></TechStack>
                             <div class="d-grid gap-2 col-12 mx-auto py-2">
                                 <a href={props.project.link} class="btn btn-light px-auto" target="_blank">link</a>
                                 <a href={props.project.github} class="btn btn-light px-auto" target="_blank">github</a>
                             </div>
+                            <TechStack techlist={props.project.techlist}></TechStack>
                         </div>
                     </div>
 

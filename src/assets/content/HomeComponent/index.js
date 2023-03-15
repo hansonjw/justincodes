@@ -15,13 +15,13 @@ const CONTENT = {
             uco: WORDS.uco,
             und: WORDS.und,
             // em: WORDS.em,
-            uca: WORDS.uca
+            // uca: WORDS.uca
         },
         images: {
             uco: {image: require('./images/uco.png'), title:'University of Colorado', words: WORDS.uco, link:'https://colorado.edu'},
             und: {image: require('./images/und.png'), title:'University of Notre Dame', words: WORDS.und, link:'https://www.nd.edu'},
             // em: {image: require('./images/em.png'), title:'ExxonMobil', words: WORDS.em, link:'https://www.exxonmobil.com'},
-            uca: {image: require('./images/uca.png'), title:'Berkeley Extension', words: WORDS.uca, link:'https://extension.berkeley.edu'},
+            // uca: {image: require('./images/uca.png'), title:'Berkeley Extension', words: WORDS.uca, link:'https://extension.berkeley.edu'},
         },
     },
     skills: {
@@ -33,18 +33,19 @@ const CONTENT = {
             {
                 category: "Certificates",
                 items:[
-                    {icon: require("./../Tech/images/aws-certified-cloud-practitioner.png"), name: "AWS Cloud Practitioner", link:"https://www.credly.com/badges/57e66f4f-ebb4-4047-a626-0bb73fffca49/public_url"}
+                    {icon: require("./../Tech/images/aws-certified-cloud-practitioner.png"), name: "AWS", link:"https://www.credly.com/badges/57e66f4f-ebb4-4047-a626-0bb73fffca49/public_url"},
+                    {icon: require("./images/uca.png"), name: "UC Berkeley", link: "https://www.parchment.com/u/award/d8e3b50e327c334e4023dc1022105471"}
                 ]
             },
             {
-                category: "Programming Languages",
+                category: "Languages",
                 items: [
                     {icon: require('./../Tech/images/python.svg').default, name:'Python', link:'https://www.python.org'},
                     {icon: require('./../Tech/images/javascript.svg').default, name:'JavaScript', link:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
                 ]
             },
             {
-                category: "Cloud Computing",
+                category: "Cloud",
                 items: [
                     {icon: require('./../Tech/images/aws.svg').default, name:'AWS', link:'https://aws.amazon.com'},
                     {icon: require('./../Tech/images/github.svg').default, name:'GitHub', link:'https://github.com'},
@@ -60,10 +61,12 @@ const CONTENT = {
                 ]
             },
             {
-                category: "Web Development",
+                category: "Web Dev",
                 items: [
                     {icon: require('./../Tech/images/html.svg').default, name:'HTML', link:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
                     {icon: require('./../Tech/images/css.svg').default, name:'CSS', link:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+                    {icon: require('./../Tech/images/nodejs.svg').default, name:'node.js', link:'https://nodejs.org/en/'},
+                    {icon: require('./../Tech/images/fastapi.svg').default, name:'FastAPI', link:'https://fastapi.tiangolo.com'},
                     {icon: require('./../Tech/images/react.svg').default, name:'React', link:'https://www.reactjs.org/'},
                     {icon: require('./../Tech/images/bootstrap.png'), name:'Bootstrap', link:'https://getbootstrap.com'},
                     {icon: require('./../Tech/images/flask.svg').default, name:'Flask', link:'https://flask.palletsprojects.com/en/2.2.x/'},

@@ -24,7 +24,7 @@ class Skills extends React.Component{
 
 
 function Category(props){
-    return <div>
+    return <div class="bg-light rounded">
         <div class="row mt-3 p-2">
             <p class="font-monospace fst-italic text-secondary"><u>{props.category.category}</u></p>
         </div>

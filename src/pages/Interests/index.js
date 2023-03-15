@@ -28,7 +28,7 @@ class Interests extends React.Component{
                                         <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="{k}-Z">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#"+k} aria-expanded="true" aria-controls="{k}-Y">
+                                                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target={"#"+k} aria-expanded="true" aria-controls="{k}-Y">
                                                         {CONTENT.titles[k]}
                                                     </button>
                                                 </h2>

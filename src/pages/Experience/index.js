@@ -30,7 +30,7 @@ function Experience(props){
                             </div>
                         ))}
                         <div class="d-grid gap-2">
-                            <a href={CONTENT.emLink} class="btn btn-light" target="_blank">EIA - Where our oil comes from</a>
+                            <a href={CONTENT.emLink} class="btn btn-jcyan" target="_blank">EIA - Where our oil comes from</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ function Experience(props){
                             </div>
                         ))}
                         <div class="d-grid gap-2">
-                            <a href={CONTENT.images[key].link} class="btn btn-light" target="_blank">link</a>
+                            <a href={CONTENT.images[key].link} class="btn btn-jcyan" target="_blank">link</a>
                         </div>
                     </div>
                     <div class='col-md-8 px-4'>
@@ -64,7 +64,7 @@ function Experience(props){
                             </div>
                         ))}
                         <div class="d-grid gap-2">
-                            <a href={CONTENT.images[key].link} class="btn btn-light" target="_blank">link</a>
+                            <a href={CONTENT.images[key].link} class="btn btn-jcyan" target="_blank">link</a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ function Experience(props){
                                             </div>
                                         ))}
                                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <a href={CONTENT.emLink} class="btn btn-light" target="_blank">EIA - Where our oil comes from</a>
+                                            <a href={CONTENT.emLink} class="btn btn-jcyan" target="_blank">EIA - Where our oil comes from</a>
                                         </div>
                                     </div>
                                 </div>

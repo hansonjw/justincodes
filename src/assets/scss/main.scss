@@ -1,26 +1,29 @@
-@import "~bootstrap/scss/bootstrap";
-@import "./variables/variables";
-@import "./components/components";
+// Import bootstrap functions, vars, mixins...
 
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
+
 // // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-// @import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
 
 // // 2. Include any default variable overrides here
-// @import "./variables/_variables.scss";
+@import "./variables/variables";
 
 // // 3. Include remainder of required Bootstrap stylesheets
-// @import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables";
+@import "./components/components";
+
 
 // // 4. Include any default map overrides here
-
+@import "./variables/map-amends";
 
 // // 5. Include remainder of required parts
-// @import "~bootstrap/scss/maps";
-// @import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/maps";
+
+
 // @import "~bootstrap/scss/root";
 
 // // 6. Optionally include any other parts as needed
@@ -37,3 +40,4 @@
 
 // 8. Add additional custom code here
 
+@import "~bootstrap/scss/bootstrap";
