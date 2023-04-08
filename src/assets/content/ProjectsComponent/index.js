@@ -11,7 +11,7 @@ const CONTENT = {
             images: require('./images/stocks3.svg').default,
             words:['A web app for live charts plotting the recent market downturn for perspective.','The primary data set utilized in the app is the S&P 500 index.', 'It leverages data analytic packages available in Python, specifically Pandas, Numpy and Matplotlib'],
             techlist:['python','flask','bulma','aws'],
-            link:'http://stocksaws-env.eba-ryff9kni.us-east-1.elasticbeanstalk.com/today',
+            link:'http://stocksawscodepipeline-env.eba-yxmwsyyg.us-east-2.elasticbeanstalk.com/today',
             github:'https://github.com/hansonjw/stocksaws',
             status: 'done'
         },
