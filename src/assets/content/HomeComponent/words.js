@@ -11,6 +11,12 @@ const WORDS = {
       "At this time, the world began to change in a big way. The financial industry was entering the era of ‘big data’ and was calling for analytical skills and computing savvy. Given my technical background and interest in economics, getting an MBA was an unexpected next step for me.",
       "At Notre Dame, I found a wonderful community of disciplined, intellectually curious learners. At this great institution, I was exposed to financial thinkers like Warren Buffett and became fascinated by investing and building economic prosperity."
     ],
+
+    utx: [
+      "After a wonderful stretch of experience working in the energy industry and developing a strong analytical toolset, I decided once again to augment my experience with education in tools like machine learning and computer science.",
+      "I am currently working towards my masters degree in computer science with the University of Texas in Austin.",
+      "This is a third placeholder sentence..."
+    ],
   
     em: [
       `The scale of the energy industry is unparalleled in business, and ExxonMobil is a world-class leader. I am grateful to have worked for this great company.`,

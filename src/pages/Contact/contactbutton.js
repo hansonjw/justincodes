@@ -14,7 +14,7 @@ class ContactButton extends React.Component{
                         <a class="btn btn-jyellow p-md-0 mx-1" href={this.props.content.links[k]} target="_blank">
                             <div class="row">  
                                 <div class="col-lg-4 p-md-2">
-                                    <img src={this.props.content.images[k]} class="rounded-circle contactIcon" alt=""></img>
+                                    <img src={this.props.content.images[k]} class="contactIcon" alt=""></img>
                                 </div>
                                 <div class="col-lg-8 my-auto">
                                     <h6 class="my-auto d-sm-block d-none text-start fw-lighter font-monospace">

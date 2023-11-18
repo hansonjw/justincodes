@@ -14,12 +14,14 @@ const CONTENT = {
         words: {
             uco: WORDS.uco,
             und: WORDS.und,
+            utx: WORDS.utx,
             // em: WORDS.em,
             // uca: WORDS.uca
         },
         images: {
             uco: {image: require('./images/uco.png'), title:'University of Colorado', words: WORDS.uco, link:'https://colorado.edu'},
             und: {image: require('./images/und.png'), title:'University of Notre Dame', words: WORDS.und, link:'https://www.nd.edu'},
+            utx: {image: require('./images/utx.png'), title:'University of Texas', words: WORDS.utx, link:'https://www.utexas.edu'},
             // em: {image: require('./images/em.png'), title:'ExxonMobil', words: WORDS.em, link:'https://www.exxonmobil.com'},
             // uca: {image: require('./images/uca.png'), title:'Berkeley Extension', words: WORDS.uca, link:'https://extension.berkeley.edu'},
         },
