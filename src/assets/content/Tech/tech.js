@@ -7,7 +7,7 @@ const TECH = {
     html:{icon:require('./images/html.svg').default,name:'HTML', link:'https://developer.mozilla.org/en-US/docs/Web/HTML'},
     css:{icon:require('./images/css.svg').default, name:'CSS', link:'https://developer.mozilla.org/en-US/docs/Web/CSS'},
     react:{icon:require('./images/react.svg').default, name:'React', link:'https://www.reactjs.org'},
-    flask:{icon:require('./images/flask.svg').default, name:'Flask', link:'https://flask.palletsprojects.com/en/2.2.x/'},
+    flask:{icon:require('./images/flask.png'), name:'Flask', link:'https://flask.palletsprojects.com/en/3.0.x/'},
     django:{icon:require('./images/django.svg').default, name:'Django', link:'https://www.djangoproject.com'},
     github:{icon:require('./images/github.svg').default, name:'GitHub', link:'https://github.com'},
     heroku:{icon:require('./images/heroku.png'), name:'Heroku', link:'https://www.heroku.com/'},

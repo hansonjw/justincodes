@@ -69,7 +69,7 @@ const CONTENT = {
                     {icon: require('./../Tech/images/fastapi.svg').default, name:'FastAPI', link:'https://fastapi.tiangolo.com'},
                     {icon: require('./../Tech/images/react.svg').default, name:'React', link:'https://www.reactjs.org/'},
                     {icon: require('./../Tech/images/bootstrap.png'), name:'Bootstrap', link:'https://getbootstrap.com'},
-                    {icon: require('./../Tech/images/flask.svg').default, name:'Flask', link:'https://flask.palletsprojects.com/en/2.2.x/'},
+                    {icon: require('./../Tech/images/flask.png'), name:'Flask', link:'https://flask.palletsprojects.com/en/3.0.x/'},
                     {icon: require('./../Tech/images/django.svg').default, name:'Django', link:'https://www.djangoproject.com'},             
                     {icon: require('./../Tech/images/bulma.png'), name:'Bulma', link:'https://bulma.io'},
                 ]
