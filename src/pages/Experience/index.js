@@ -113,13 +113,14 @@ function Experience(props){
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 0"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 0"></button>
                 </div>
                 <div class="carousel-inner">
 
                     {Object.keys(CONTENT.images).map((key)=>(
                     <div class={(Object.keys(CONTENT.images).indexOf(key)===0) ? "carousel-item active" : "carousel-item"}>
-                        <img src={CONTENT.images[key].image} class="d-block w-100 bg-light" alt="..."/>
+                        <img src={CONTENT.images[key].image} class="d-block w-100 bg-secondary" alt="..."/>
                     </div>
                     ))}
 
