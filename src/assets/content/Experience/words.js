@@ -53,6 +53,11 @@ const WORDS = {
         'While working in ExxonMobil\'s global drilling organization, I helped the Vice President gain insight into the company\'s global operations.',
         'This is an oil drilling and production platform located in Sakhalin, Russia, just north of Japan.',
         'Check out the link to learn more about some of the tough decisions that leaders at ExxonMobil face.'
+    ],
+    adl: [
+        'Currently I am providing data science expertise to Aero Design Labs - a venture capital backed start-up company helping airlines achieve fuel efficiency and carbon emission targets.',
+        'ADL provides proprietary CFD scanning and analysis for existing aircraft and helps identify areas of disrupted airflow.',
+        'One of my major contributions was analyzing thousands of hours of flight data and quantifying the fuel efficiency improvement after modifications had been made on a commercial aircraft.'
     ]
 }
 

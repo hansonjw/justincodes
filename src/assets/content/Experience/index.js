@@ -18,7 +18,8 @@ const CONTENT = {
         midland2:{image: require('./images/midland2.png'), title: 'xxx', words: WORDS.midland2, link:'https://goo.gl/maps/wcgVFR3pqAtZnWR69'},
         champion: {image: require('./images/champion.jpg'), title:'Drill Ship - Deepwater Champion', words: WORDS.champion, link:'https://www.deepwater.com//documents/RigSpecs/Deepwater%20Champion.pdf'},
         acquarius: {image: require('./images/aquarius.jpg'), title:'Drill Ship - West Aquarius', words: WORDS.acquarius, link:'https://www.seadrill.com/application/files/5915/7288/7940/west-aquarius.pdf'},
-        sakhalin:{image: require('./images/sakhalin.png'), title: 'xxx', words: WORDS.sakhalin, link:'https://corporate.exxonmobil.com/news/newsroom/news-releases/2022/0301_exxonmobil-to-discontinue-operations-at-sakhalin-1_make-no-new-investments-in-russia'}
+        sakhalin:{image: require('./images/sakhalin.png'), title: 'xxx', words: WORDS.sakhalin, link:'https://corporate.exxonmobil.com/news/newsroom/news-releases/2022/0301_exxonmobil-to-discontinue-operations-at-sakhalin-1_make-no-new-investments-in-russia'},
+        adl:{image: require('./images/adl.png'), title: 'adl', words: WORDS.adl, link:'https://aerodesignlabs.com', link2:'https://www.prnewswire.com/in/news-releases/aero-design-labs-hits-fuel-and-carbon-emission-reduction-targets-with-its-drag-reduction-kit-for-the-boeing-737-800-301890956.html'},
     }
 }
 

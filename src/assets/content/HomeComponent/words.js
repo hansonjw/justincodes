@@ -13,9 +13,8 @@ const WORDS = {
     ],
 
     utx: [
-      "After a wonderful stretch of experience working in the energy industry and developing a strong analytical toolset, I decided once again to augment my experience with education in tools like machine learning and computer science.",
-      "I am currently working towards my masters degree in computer science with the University of Texas in Austin.",
-      "This is a third placeholder sentence..."
+      "After a wonderful stretch of experience working in the energy industry and developing a strong analytical toolset, I decided once again to augment my experience with education in tools like machine learning.",
+      "I am currently working towards a masters degree in Computer Science, on a part time basis, with the University of Texas in Austin.",
     ],
   
     em: [
