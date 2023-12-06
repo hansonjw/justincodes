@@ -48,12 +48,12 @@ function Experience(props){
                         </div>
                     </div>
                     <div class='col-md-8 px-4'>
-                        <img src={CONTENT.images[key].image} class="d-block w-100 bg-secondary" alt="..."/>
+                        <img src={CONTENT.images[key].image} class="d-block w-100 bg-light" alt="..."/>
                     </div>
                 </div>
                 : <div class='row py-5'>
                     <div class='col-md-8 px-4'>
-                        <img src={CONTENT.images[key].image} class="d-block w-100 bg-secondary" alt="..."/>
+                        <img src={CONTENT.images[key].image} class="d-block w-100 bg-light" alt="..."/>
                     </div>
                     <div class="col-md-4 px-4 py-md-0 my-auto py-4">
                         {CONTENT.images[key].words.map((w)=>(
