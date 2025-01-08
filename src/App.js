@@ -6,6 +6,7 @@ import Experience from './pages/Experience'
 import Contact from './pages/Contact'
 import Interests from './pages/Interests'
 import Projects from './pages/Projects'
+import Wedding from './pages/Wedding'
 import Nav from './pages/components/Nav'
 import Footer from './pages/components/Footer'
 
@@ -40,7 +41,12 @@ class App extends React.Component{
                 {
                 to: 'interests',
                 text: 'Interests',
-                }],
+                },
+                {
+                to: 'reginaandjustin',
+                text: 'Regina And Justin',
+                },
+            ],
             currentOption: 'home'
         }
     };
@@ -59,10 +65,11 @@ class App extends React.Component{
                             <Route exact path="experience" element={<Experience />} />
                             <Route exact path="code" element={<Projects />} />
                             <Route exact path="contact" element={<Contact />} />
+                            <Route exact path="reginaandjustin" element={<Wedding />} />
                             <Route path="*" element={<Home />} />
                         </Routes>
                     </div>
-                    <Footer></Footer>
+                    {/* <Footer></Footer> */}
                 </BrowserRouter>
             </div>
         )
