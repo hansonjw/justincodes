@@ -1,22 +1,23 @@
 import React from 'react';
-import CONTENT from '../../assets/content/InterestsComponent/index.js'
-import Banner from './../components/Banner'
+import './wedding.scss';
+import CONTENT from './assets/words.js'
+import SECTION from './components/Section'
 
-class Wedding extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return(
-            <div class="">
-                <div class="container py-md-5 py-4">
-                    <h2>Regina And Justin</h2>
-                    <p>...more details to come</p>
-                </div>
+function Wedding() {
+    return (
+        <div className="container wedding-page">
+            <h2 class="wedding-title">Regina and Justin...and Astrid</h2>
+            <p>This site is under construction. Please check back soon for more information.</p>
+            <div className="row g-4">
+                {CONTENT.map((obj, idx) => (
+                    <div className="col-12" key={idx}>
+                        <SECTION content={obj} />
+                    </div>
+                ))}
             </div>
-        )
-    }
+        </div>
+
+    )
 }
 
 export default Wedding

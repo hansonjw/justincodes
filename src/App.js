@@ -11,7 +11,7 @@ import Nav from './pages/components/Nav'
 import Footer from './pages/components/Footer'
 
 // Routing modules
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom';
 
 // for SASS and customizing bootstrap
 import './assets/scss/main.scss'
@@ -52,29 +52,40 @@ class App extends React.Component{
     };
 
     render(){
+        // Get the current path from props
+        const { location } = this.props;
+        const hideNavFooter = location && location.pathname === '/reginaandjustin';
         return(
             <div>
-                <BrowserRouter>
-                    <Nav
-                        navOptions = {this.state.navOptions}
-                    ></Nav>
-                    <div class="py-4">
-                        <Routes>
-                            <Route exact path="/" element={<Home />} errorElement={<Home />}/>
-                            <Route exact path="interests" element={<Interests />} />
-                            <Route exact path="experience" element={<Experience />} />
-                            <Route exact path="code" element={<Projects />} />
-                            <Route exact path="contact" element={<Contact />} />
-                            <Route exact path="reginaandjustin" element={<Wedding />} />
-                            <Route path="*" element={<Home />} />
-                        </Routes>
-                    </div>
-                    {/* <Footer></Footer> */}
-                </BrowserRouter>
+                {!hideNavFooter && <Nav navOptions={this.state.navOptions}></Nav>}
+                <div class="py-4">
+                    <Routes>
+                        <Route exact path="/" element={<Home />} errorElement={<Home />}/>
+                        <Route exact path="interests" element={<Interests />} />
+                        <Route exact path="experience" element={<Experience />} />
+                        <Route exact path="code" element={<Projects />} />
+                        <Route exact path="contact" element={<Contact />} />
+                        <Route path="*" element={<Home />} />
+                        <Route exact path="reginaandjustin" element={<Wedding />} />
+                    </Routes>
+                </div>
+                {!hideNavFooter && <Footer></Footer>}
             </div>
         )
     };
 }
 
+// Functional wrapper to provide location to App
+function AppWithRouter(props) {
+    const location = useLocation();
+    return <App {...props} location={location} />;
+}
 
-export default App
+// Main export with BrowserRouter
+export default function MainApp() {
+    return (
+        <BrowserRouter>
+            <AppWithRouter />
+        </BrowserRouter>
+    );
+}
