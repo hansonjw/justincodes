@@ -11,7 +11,7 @@ import Nav from './pages/components/Nav'
 import Footer from './pages/components/Footer'
 
 // Routing modules
-import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 // for SASS and customizing bootstrap
 import './assets/scss/main.scss'

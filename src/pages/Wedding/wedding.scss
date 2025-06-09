@@ -21,6 +21,23 @@
     margin-top: 2rem;
 }
 
+.wedding-map{
+  max-width: 800px; /* Caps width */
+  margin: 20px auto; /* Centers */
+}
+
+.wedding-iframe {
+  width: 100%; /* Fills container */
+  height: 60vh; /* 60% of viewport height */
+  min-height: 200px;
+}
+
+
+.wedding-image{
+    width: 50%; /* Relative to parent container */
+    max-width: 500px; /* Caps the size */
+    height: auto; /* Maintains aspect ratio */
+}
 
 
 
