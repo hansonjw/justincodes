@@ -16,9 +16,9 @@ function Wedding() {
                     </div>
                 ))}
             </div>
-            <div className="row g-4">
+            {/* <div className="row g-4">
                 <RSVP />
-            </div>
+            </div> */}
         </div>
 
     )
