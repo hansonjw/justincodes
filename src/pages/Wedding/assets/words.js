@@ -1,7 +1,7 @@
 const CONTENT = [
     {
         title: "Date and Time",
-        textlist: ["September 26, 2025", "Start Time: 3:00 PM", "End Time: 9:00 PM", "The reception will start at 3:00 PM, followed by cocktail hour, dinner and festivities", "There might be a song or two of live music sometime after dinner, but no promises."],
+        textlist: ["Date: September 26, 2025", "Start Time: 3:00 PM", "End Time: 9:00 PM", "The reception will start at 3:00 PM, followed by cocktail hour, dinner and festivities", "There might be a song or two of live music sometime after dinner, but no promises."],
         image: require('./images/aih.jpeg'),
     },
     {

@@ -9,8 +9,7 @@
 .wedding-title {
   color: #1e3c5a;
   text-align: center;
-  margin-top: 2rem;
-  padding: 2rem;
+  padding-bottom: 2rem;
   font-family: 'Jazz LET', fantasy;
   background-color: #CCCCFF;
 }
@@ -21,25 +20,44 @@
     margin-top: 2rem;
 }
 
-.wedding-map{
-  max-width: 800px; /* Caps width */
-  margin: 20px auto; /* Centers */
+// Make the containers for maps and images identical
+.wedding-map,
+.wedding-image-container {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 1rem auto;
+    border-radius: 8px;
+    aspect-ratio: 4/3;
+    overflow: hidden;
 }
 
-.wedding-iframe {
-  width: 100%; /* Fills container */
-  height: 60vh; /* 60% of viewport height */
-  min-height: 200px;
+// Make the content (iframe or image) fill its container
+.wedding-iframe,
+.wedding-image-container img {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-
-.wedding-image{
-    width: 50%; /* Relative to parent container */
-    max-width: 500px; /* Caps the size */
-    height: auto; /* Maintains aspect ratio */
+// Ensure the image scales correctly without distortion
+.wedding-image-container img {
+    object-fit: cover;
 }
 
+// Custom styling for the RSVP submit button
+.btn.btn-rsvp-submit {
+  background-color: #C71585; // Dark pink
+  color: #FFFFFF; // White text
+  border: 2px solid #C71585;
+  font-weight: bold;
+}
 
+.btn.btn-rsvp-submit:hover {
+  background-color: #a1116a; // Darker pink on hover
+  color: #FFFFFF; // White text
+  border-color: #a1116a;
+}
 
 // pure yellow: #ffff00
 // periwinkle:CCCCFF

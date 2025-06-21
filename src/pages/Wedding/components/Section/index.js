@@ -6,22 +6,26 @@ class SECTION extends React.Component{
 
     render() {
         return(
-            <div class="row">
-                <div class="col">   
-                    <div class="card border-0">
-                        <div class="row">
+            <div className="row">
+                <div className="col">
+                    <div className="card border-0">
+                        <div className="row m-2">
                             <h2>{this.props.content.title}</h2>
-                            <div class="col-md-6">
-                                <p>{this.props.content.textlist.map(t => <span>{t}<br/></span>)}</p>
+                            <div className="col-md-6 my-4">
+                                <p>{this.props.content.textlist.map((t, index) => <span key={index}>{t}<br/></span>)}</p>
                                 {this.props.content.link && <p><a href={this.props.content.link} target="_blank" rel="noreferrer">link</a></p>}
-                            </div>        
-                            <div class="col-md-6">
-                                    {this.props.content.map &&
-                                    <div class="wedding-map">
-                                        <iframe src={this.props.content.map} title={this.props.content.maptitle} class="wedding-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div className="col-md-6">
+                                {this.props.content.map &&
+                                    <div className="wedding-map">
+                                        <iframe src={this.props.content.map} title={this.props.content.maptitle} className="wedding-iframe" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 }
-                                <img src={this.props.content.image} class="card-img-top wedding-image" alt=""/>
+                                {this.props.content.image &&
+                                    <div className="wedding-image-container">
+                                        <img src={this.props.content.image} className="card-img-top" alt=""/>
+                                    </div>
+                                }
                             </div>
                         </div>
                     </div>

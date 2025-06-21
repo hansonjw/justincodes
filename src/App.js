@@ -58,7 +58,7 @@ class App extends React.Component{
         return(
             <div>
                 {!hideNavFooter && <Nav navOptions={this.state.navOptions}></Nav>}
-                <div class="py-4">
+                <div className={hideNavFooter ? '' : 'py-4'}>
                     <Routes>
                         <Route exact path="/" element={<Home />} errorElement={<Home />}/>
                         <Route exact path="interests" element={<Interests />} />
