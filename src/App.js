@@ -7,6 +7,7 @@ import Contact from './pages/Contact'
 import Interests from './pages/Interests'
 import Projects from './pages/Projects'
 import Wedding from './pages/Wedding'
+import WeddingAttendance from './pages/Wedding-Attendance'
 import Nav from './pages/components/Nav'
 import Footer from './pages/components/Footer'
 
@@ -54,7 +55,10 @@ class App extends React.Component{
     render(){
         // Get the current path from props
         const { location } = this.props;
-        const hideNavFooter = location && location.pathname === '/reginaandjustin';
+        const hideNavFooter = location && (
+            location.pathname === '/reginaandjustin' ||
+            location.pathname === '/reginaandjustin/rsvps'
+        );
         return(
             <div>
                 {!hideNavFooter && <Nav navOptions={this.state.navOptions}></Nav>}
@@ -67,6 +71,7 @@ class App extends React.Component{
                         <Route exact path="contact" element={<Contact />} />
                         <Route path="*" element={<Home />} />
                         <Route exact path="reginaandjustin" element={<Wedding />} />
+                        <Route exact path="/reginaandjustin/rsvps" element={<WeddingAttendance />} />
                     </Routes>
                 </div>
                 {!hideNavFooter && <Footer></Footer>}

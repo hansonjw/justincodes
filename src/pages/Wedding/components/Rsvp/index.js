@@ -2,28 +2,50 @@ import React, { useState } from 'react';
 import aihImage from '../../assets/images/aih.jpeg';
 
 function RSVP() {
-  const [form, setForm] = useState({ name: '', contact: '', guests: 1, passphrase: '', attendance: 'Accept' });
+  const [form, setForm] = useState({ name: '', contact: '', count: 1, passphrase: '', attendance: 'Accept', guests: [''] });
   const [status, setStatus] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    const newForm = { ...form, [name]: value };
+    let newForm = { ...form, [name]: value };
 
-    // If attendance is changed to "Decline", set guests to 0.
-    // If changed back to "Accept", reset guests to 1.
+    // If attendance is changed to "Decline", set count to 0 and clear guests.
+    // If changed back to "Accept", reset count to 1 and guests to one empty string.
     if (name === 'attendance') {
-        if (value === 'Decline') {
-            newForm.guests = 0;
-        } else {
-            newForm.guests = 1;
-        }
+      if (value === 'Decline') {
+        newForm.count = 0;
+        newForm.guests = [];
+      } else {
+        newForm.count = 1;
+        newForm.guests = [''];
+      }
+    }
+    // If count changes, update guests array length
+    if (name === 'count') {
+      const newCount = parseInt(value, 10) || 0;
+      let guests = [...form.guests];
+      if (newCount > guests.length) {
+        guests = guests.concat(Array(newCount - guests.length).fill(''));
+      } else {
+        guests = guests.slice(0, newCount);
+      }
+      newForm.count = newCount;
+      newForm.guests = guests;
     }
     setForm(newForm);
+  };
+
+  const handleGuestNameChange = (idx, value) => {
+    const guests = [...form.guests];
+    guests[idx] = value;
+    setForm({ ...form, guests });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('loading');
+    setSuccessMessage(null);
     try {
       const response = await fetch('https://6agdwiu7k5.execute-api.us-east-2.amazonaws.com/prod/rsvp', {
         method: 'POST',
@@ -31,8 +53,13 @@ function RSVP() {
         body: JSON.stringify(form),
       });
       if (response.ok) {
+        if (form.attendance === 'Accept') {
+          setSuccessMessage(`Thank you, we have you down for ${form.count} attendee${form.count > 1 ? 's' : ''}. See you in September!`);
+        } else {
+          setSuccessMessage("Sorry you won't be able to attend, but thank you for letting us know.");
+        }
         setStatus('success');
-        setForm({ name: '', contact: '', guests: 1, passphrase: '', attendance: 'Accept' });
+        setForm({ name: '', contact: '', count: 1, passphrase: '', attendance: 'Accept', guests: [''] });
       } else {
         setStatus('error');
       }
@@ -93,21 +120,39 @@ function RSVP() {
                     </div>
                   </div>
                   <div className="mb-3 row align-items-center">
-                    <label className="col-md-6 col-form-label text-md-end" htmlFor="rsvp-guests">Number of Attendees:</label>
+                    <label className="col-md-6 col-form-label text-md-end" htmlFor="rsvp-count">Number of Attendees:</label>
                     <div className="col-md-6">
                       <input
-                        id="rsvp-guests"
+                        id="rsvp-count"
                         className="form-control"
-                        name="guests"
+                        name="count"
                         type="number"
                         min="0"
-                        value={form.guests}
+                        value={form.count}
                         onChange={handleChange}
                         required
                         disabled={form.attendance === 'Decline'}
                       />
                     </div>
                   </div>
+                  {form.attendance === 'Accept' && form.count > 0 && (
+                    <div className="mb-3 row align-items-center">
+                      <label className="col-md-6 col-form-label text-md-end">Guest Names:</label>
+                      <div className="col-md-6">
+                        {form.guests.map((guest, idx) => (
+                          <input
+                            key={idx}
+                            className="form-control mb-2"
+                            type="text"
+                            placeholder={`Guest ${idx + 1} Name`}
+                            value={guest}
+                            onChange={e => handleGuestNameChange(idx, e.target.value)}
+                            required
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   <div className="mb-3 row align-items-center">
                     <label className="col-md-6 col-form-label text-md-end" htmlFor="rsvp-passphrase">
                       Pass Phrase
@@ -130,7 +175,7 @@ function RSVP() {
                       <button type="submit" className="btn btn-rsvp-submit w-100" disabled={status === 'loading'}>
                         {status === 'loading' ? 'Submitting...' : 'Submit'}
                       </button>
-                      {status === 'success' && <p className="text-success mt-2">Success!</p>}
+                      {successMessage && <p className="text-success mt-2">{successMessage}</p>}
                       {status === 'error' && <p className="text-danger mt-2">There was an error. Please try again.</p>}
                     </div>
                   </div>
@@ -138,7 +183,7 @@ function RSVP() {
               </div>
              <div className="col-md-6">
                <div className="wedding-image-container">
-                   <img src={aihImage} className="card-img-top"/>
+                   <img src={aihImage} className="card-img-top" alt="AIH"/>
                </div>
              </div>
            </div>
