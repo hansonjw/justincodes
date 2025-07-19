@@ -122,17 +122,21 @@ function RSVP() {
                   <div className="mb-3 row align-items-center">
                     <label className="col-md-6 col-form-label text-md-end" htmlFor="rsvp-count">Number of Attendees:</label>
                     <div className="col-md-6">
-                      <input
+                      <select
                         id="rsvp-count"
-                        className="form-control"
+                        className="form-select"
                         name="count"
-                        type="number"
-                        min="0"
                         value={form.count}
                         onChange={handleChange}
                         required
                         disabled={form.attendance === 'Decline'}
-                      />
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
                     </div>
                   </div>
                   {form.attendance === 'Accept' && form.count > 0 && (

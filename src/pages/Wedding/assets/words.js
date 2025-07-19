@@ -1,7 +1,7 @@
 const CONTENT = [
     {
         title: "Announcements",
-        textlist: ["Please check this site often as we'll post updates and additional information as we get closer to September"]
+        textlist: ["Invitations have been mailed out.  Please keep an eye out for them in the coming days."]
     },
     {
         title: "Date and Time",
