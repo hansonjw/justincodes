@@ -74,7 +74,7 @@ function RSVP() {
         <div className="card border-0">
            <div className="row m-2">
              <h2>RSVP</h2>
-             <h5>Kindly reply by: <span style={{ fontWeight: 'bold' }}>August 3, 2025</span></h5>
+             <h5>Kindly reply by: <span style={{ fontWeight: 'bold' }}>August 10, 2025</span></h5>
              <div className="col-md-6">
                 <form onSubmit={handleSubmit} className="rsvp-form">
                   <div className="mb-3 row align-items-center">

@@ -233,6 +233,7 @@ function WeddingAttendance() {
                         <th>Guest Count</th>
                         <th>Attendance</th>
                         <th>Guest Names</th>
+                        <th>S3 Object</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -250,6 +251,7 @@ function WeddingAttendance() {
                                 <td>{data.count || 0}</td>
                                 <td>{data.attendance || 'N/A'}</td>
                                 <td>N/A</td>
+                                <td>{obj.Key || 'N/A'}</td>
                               </tr>
                             );
                           } else {
@@ -260,6 +262,7 @@ function WeddingAttendance() {
                                 <td>{guestIdx === 0 ? (data.count || 0) : ''}</td>
                                 <td>{guestIdx === 0 ? (data.attendance || 'N/A') : ''}</td>
                                 <td>{guest}</td>
+                                <td>{guestIdx === 0 ? (obj.Key || 'N/A') : ''}</td>
                               </tr>
                             ));
                           }
@@ -290,6 +293,7 @@ function WeddingAttendance() {
                         <th>Guest Count</th>
                         <th>Attendance</th>
                         <th>Guest Names</th>
+                        <th>S3 Object</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -307,6 +311,7 @@ function WeddingAttendance() {
                                 <td>{data.count || 0}</td>
                                 <td>{data.attendance || 'N/A'}</td>
                                 <td>N/A</td>
+                                <td>{obj.Key || 'N/A'}</td>
                               </tr>
                             );
                           } else {
@@ -317,6 +322,7 @@ function WeddingAttendance() {
                                 <td>{guestIdx === 0 ? (data.count || 0) : ''}</td>
                                 <td>{guestIdx === 0 ? (data.attendance || 'N/A') : ''}</td>
                                 <td>{guest}</td>
+                                <td>{guestIdx === 0 ? (obj.Key || 'N/A') : ''}</td>
                               </tr>
                             ));
                           }
