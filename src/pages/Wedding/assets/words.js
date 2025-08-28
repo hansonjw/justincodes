@@ -1,7 +1,7 @@
 const CONTENT = [
     {
         title: "Announcements",
-        textlist: ["Invitations have been mailed out.  Please keep an eye out for them in the coming days."]
+        textlist: ["We are super excited to have you all join us for our wedding!", "For anyone in town Thursday 9/25, com meet up with s beginnng around 5pm in the gretroom of the Denver Marriott West, near the Copper Creek bar/restaurant.  This is informal so feel free to stop by anytime throughout the evening.", "Invitations have been mailed out.  Please keep an eye out for them in the coming days."]
     },
     {
         title: "Date and Time",
