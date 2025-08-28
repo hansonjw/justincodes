@@ -12,7 +12,7 @@ class SECTION extends React.Component{
                         <div className="row m-2">
                             <h2>{this.props.content.title}</h2>
                             <div className="col-md-6 my-4">
-                                <p>{this.props.content.textlist.map((t, index) => <span key={index}>{t}<br/></span>)}</p>
+                                <div>{this.props.content.textlist.map((t, index) => <p key={index} className="mb-3">{t}</p>)}</div>
                                 {this.props.content.link && <p><a href={this.props.content.link} target="_blank" rel="noreferrer">link</a></p>}
                             </div>
                             <div className="col-md-6">
